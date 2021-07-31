@@ -1,0 +1,241 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+	font-family: sans-serif;
+}
+header{
+	width: 100%;
+	height: 50px;
+	background: black;
+	padding: 10px;
+}
+#logo{
+	width: 50px;
+	height: 30px;
+	/*background: #D36E6E;*/
+	float: left;
+	margin-right: 10px;
+}
+	#logo img{
+		width: 30px;
+		border-radius: 50%;
+	}
+#menu{
+	width: 80%;
+	height: 30px;
+	/*background: #03D7FD;*/
+	float: left;
+}
+	#menu i{
+		position: relative;
+		/*background: green;*/
+		transform: scale(1.5);	
+		opacity: 0;
+	}
+	#menu form{
+		display: inline-block;
+		margin-right: 10px;
+	}
+	#menu input{
+		width: 250px;
+		height: 30px;
+		border-radius: 10px;
+		border: solid 1px #B6A9A9;
+	}
+	#menu ul{
+		list-style: none;
+		display: inline-block;
+		transform: translateY(5px);
+	}
+	#menu li{
+		float: left;
+		margin-right: 20px;
+	}
+	#menu a{
+		text-decoration: none;
+		color: white;
+		/*background: green;*/
+		font-size: 16px;
+		font-weight: bold;
+	}
+#addon{
+	width: 100px;
+	height: 30px;
+	background: #D730C5;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+/*-------------------------------*/
+section{
+	width: 100%;
+	min-height: 600px;
+	background: #f7f8fa;
+	padding: 10px;
+}
+#learnGit{
+	width: 75%;
+	height: 200px;
+	float: right;
+	margin-bottom: 10px;
+	padding: 20px 15px;
+	border-radius: 10px;
+	border: 1px solid #cdcdcd;
+	background: linear-gradient(-45deg, #e1feea, #fff);
+}
+	#learnGit h2{
+		font-weight: initial;
+		margin-bottom: 10px;
+	}
+	#learnGit p{
+		font-size: 16px;
+		margin-bottom: 15px;
+		font-size: 14px;
+		line-height: 1.6;
+	}
+	#learnGit button{
+		padding: 10px;
+		border-radius: 10px;
+		border: 1px solid #cdcdcd;
+		font-weight: 700;
+	}
+	button#read_guide{
+		background: #2fb252;
+		color: white;
+		margin-right: 10px;
+	}
+#left{
+	width: 25%;
+	/*min-height: 600px;*/
+	/*background: #ED8540;*/
+	float: left;
+	padding: 20px 10px;	
+}
+	#left h3{
+		font-size: 14px;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 10px
+	}
+	#left p{
+		font-size: 14px;
+		line-height: 1.6;
+	}
+	#repository{
+		border-bottom: 1px solid #cdcdcd;
+		padding-bottom: 20px;
+	}
+	#repository h3{
+		display: inline-block;
+	}
+	#repository button{
+		float: right;
+		/*top: 10px;*/
+		padding: 5px 20px;
+		background: #51A84A;
+		font-size: 14px;
+		color: white;
+		border-radius: 10px;
+		border: none;
+	}
+	#repository input{
+		padding: 10px;
+		border-radius: 10px;
+		border: 1px solid #cdcdcd;
+		margin-bottom: 20px;
+	}
+	#repository ul{
+		margin-bottom: 20px;
+		list-style: none;
+	}
+	#recent{
+		padding-top: 20px;
+	}
+#all_act{
+	width: 75%;
+	min-height: 100px;
+	/*background: #DCF033;*/
+	float: right;
+	margin-top: 10px;
+	padding: 20px;
+}
+	#all_act h3{
+		font-size: 16px;
+		margin-bottom: 10px;
+		font-weight: initial;
+	}
+	#all_act img{
+		width: 30px;
+		border-radius: 50%;
+		margin: 0 10px;
+	}
+	#all_act #noti{
+		width: 90%;
+		margin: 10px 40px;
+		padding: 25px 15px;
+		border-radius: 10px;
+		border: 1px solid #cdcdcd;
+	}
+	#noti p{
+		margin-bottom: 10px;
+	}
+	#noti span, p{
+		line-height: 1.6;
+	}
+	#noti .main{
+		padding: 3px;
+		color: blue;
+		border-radius: 10px;
+		border: 1px solid #cdcdcd;
+		font-size: 14px;
+	}
+	#noti .acc{
+		color: blue;
+	}
+/*-----------------------------*/
+@media screen and (max-width: 768px){
+	section{
+		padding: 10px;
+		margin-top: 10px;
+	}
+	#menu{
+		display: none;
+	}
+	i{
+		opacity: 1;
+		color: white;
+	}
+	#logo{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#addon{
+		width: 50px;
+	}
+	#learnGit, #left, #all_act{
+		float: none;
+		width: 100%;
+	}
+	div#learnGit::before{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	#all_act #noti{
+		width: 100%;
+		margin: 10px 0;
+	}
+	#learnGit p{
+		margin-bottom: 10px;
+	}	
+	#recent p{
+		border-radius: 10px;
+		border: 1px solid #cdcdcd;
+		padding: 10px;
+		font-size: 12px;
+	}
+}	
